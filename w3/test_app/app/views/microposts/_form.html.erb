@@ -21,13 +21,7 @@
     <%= form.select :user_id, 
     options_from_collection_for_select(User.all, :id, :name, micropost.user_id)
     %>
-    # <select name="micropost[user_id]">
-    #   <% User.all.each do |user| %>
-    #   <option value="<%=user.id%>"><%=user.name%></option>
-    #   <%end%>
-    # </select>
   </div>
-
   <div class="actions">
     <%= form.submit %>
   </div>
